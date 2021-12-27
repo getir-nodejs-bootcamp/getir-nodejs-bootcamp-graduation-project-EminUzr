@@ -12,7 +12,7 @@ let filterRequest = function (req, res) {
   if (model.minCount > model.maxCount) {
     return res.send({
       code: 400,
-      msg: "Failed Request",
+      msg: "Failed Request: Minimum count can not be bigger than maximum count!",
     });
   }
 
@@ -22,21 +22,21 @@ let filterRequest = function (req, res) {
   if (!startDate.isValid()) {
     return res.send({
       code: 400,
-      msg: "Failed Request",
+      msg: "Failed Request: Not a valid date!",
     });
   }
 
   if (!endDate.isValid()) {
     return res.send({
       code: 400,
-      msg: "Failed Request",
+      msg: "Failed Request: Not a valid date!",
     });
   }
 
   if (startDate.diff(endDate) > 0) {
     return res.send({
       code: 400,
-      msg: "Failed Request",
+      msg: "Failed Request: Start date can not be after end date!",
     });
   }
 
