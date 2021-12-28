@@ -1,6 +1,7 @@
 # Getir Node.js Bootcamp Graduation Project
 
 HEROKU DEPLOY URL : https://emin-uzer-getir-assignment.herokuapp.com/
+
 POST request works without a problem with POSTMAN.
 
 ## The Challenge
